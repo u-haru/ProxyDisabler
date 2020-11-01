@@ -1,0 +1,25 @@
+﻿<Window x:Class="ProxyDisabler.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProxyDisabler"
+        mc:Ignorable="d"
+        Title="ProxyDisabler" Height="200" Width="400">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition />
+				<ColumnDefinition />
+			</Grid.ColumnDefinitions>
+			<Button Grid.Column="0" Name="Button_Start" Click="Start" Content="Start" Width="50" Height="26" HorizontalAlignment="Right" Margin="0,2,37,2"/>
+			<Button Grid.Column="0" Name="Button_Stop" Click="Stop" Content="Stop" Grid.ColumnSpan="2" Width="50" Height="26"/>
+			<Button Grid.Column="1" Name="Button_Config" Click="Config" Content="Config" Width="50" Height="26" HorizontalAlignment="Left" Margin="37,2,0,2"/>
+		</Grid>
+		<TextBox Grid.Row="0" Name="LogBox" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Margin="4,4,4,0" IsReadOnly="True" Text="aa" />
+	</Grid>
+</Window>
