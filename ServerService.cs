@@ -216,7 +216,7 @@ namespace ProxyDisabler
             string url = "";
             string reqMsg = "";
             try{
-                reqs = rString.Split("\r\n\r\n")[0].Split("\r\n");
+                reqs = rString.Split("\r\n\r\n".ToCharArray())[0].Split("\r\n".ToCharArray());
                 method = reqs[0].Split(' ')[0];
                 url = reqs[0].Split(' ')[1];
             }
